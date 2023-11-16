@@ -1,0 +1,58 @@
+.OrderProgress h1 {
+  font-size: 1.6rem;
+  color: #e6e6e6;
+  text-align: center;
+  padding-left: 0.9em;
+}
+
+.OrderProgress .box {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #707070;
+  background: #fff;
+  margin: 0 0.2em;
+}
+.OrderProgress .white-box-icon {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid hsl(0, 0%, 60%);
+}
+
+.OrderProgress .circle {
+  width: 2rem;
+  height: 2rem;
+  background-color: #0dfca0;
+  border-radius: 50%;
+}
+.line {
+  height: 0.01rem;
+  width: 7em;
+  background-color: #0dfca0;
+  margin-top: 1em;
+}
+.state-box {
+  margin-left: 4em;
+  margin-top: 0.7em;
+}
+.state-box p {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #0dfca0;
+}
+
+.state-icon {
+  width: 20%;
+}
+.product-img {
+  width: 30%;
+}
+
+.peyment-icon {
+  width: 5%;
+}
+.digi-img {
+  width:6%;
+}
+
+
+
+

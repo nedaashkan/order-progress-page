@@ -3,8 +3,8 @@ import "./UserAvatar.css";
 export default function UserAvatar() {
   return (
     <div className="UserAvatar">
-      <div className="row d-flex justify-content-center mt-5 mt-md-5 mt-lg-5 ">
-        <div className="col-3 col-md-3 col-lg-2 ">
+      <div className="row d-flex justify-content-center">
+        <div className="col-2 col-md-2 col-lg-2 userAvatar-box ">
           <img src="/avatar/Profile pic.png" alt="/" className="img-fluid" />
         </div>
       </div>

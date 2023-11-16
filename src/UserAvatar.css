@@ -1,0 +1,29 @@
+.UserAvatar .userAvatar-box {
+  position: absolute;
+  left: 53%;
+  top: -7rem;
+  transform: translateX(-50%);
+}
+
+
+
+@media (max-width: 1399.98px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+.UserAvatar .userAvatar-box {
+  left: 52%;
+  top: -10rem;
+  transform: translateX(-50%);
+}
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+.UserAvatar .userAvatar-box {
+  left: 52%;
+  top: -8rem;
+  transform: translateX(-50%);
+}
+}

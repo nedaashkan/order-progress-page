@@ -3,20 +3,62 @@
   --light-blue: #00d5ff;
 }
 
-body {
-  background-color: var(--black);
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
 }
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-.App .main-container{
-  background-color: blue;
-}
-/* .App {
-  background-image: url("/background/BG.png");
-  background-size: 500px;
-  background-repeat: no-repeat;
+
+.App .main-container {
   height: 100vh;
-} */
+  position: relative;
+}
+
+.App .bg-image {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+}
+
+.App .content-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 85%;
+  position: absolute;
+  top: 25%;
+  left: 7.5%;
+}
+
+@media (max-width: 1399.98px) {
+  :root {
+    font-size: 1.1rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  :root {
+    font-size: 0.7rem;
+  }
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  :root {
+    font-size: 0.5rem;
+  }
+  .App .bg-image {
+    height: 100vh;
+  }
+
+  .App .content-container {
+    width: 99%;
+    top: 10%;
+    left: 0%;
+  }
+}

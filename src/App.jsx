@@ -6,11 +6,11 @@ import ShoppingCart from "./ShoppingCart.jsx";
 function App() {
   return (
     <div className="App">
-      <div className="container p-0">
-        <UserAvatar />
-        <div className="main-container">
+      <div className="container-fluid main-container p-0">
+        <img class="bg-image" src="./background/BG.png" alt="" />
+        <div className="content-container">
+          <UserAvatar />
           <OrderProgress />
-          <ShoppingCart />
         </div>
       </div>
     </div>
