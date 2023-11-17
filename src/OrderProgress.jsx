@@ -1,14 +1,27 @@
 import "./OrderProgress.css";
+let productState = 2;
 let stateInfo = [
-  { accepted: true },
+  { accepted: true ,
+  text:"تائید شده",
+  index:0
+  },
   {
     doing: false,
+    text:" در حال انجام",
+    index:1
+
   },
   {
     posted: false,
+    text:" ارسال شده",
+    index:2
+
   },
   {
-    delivered: true,
+    delivered: false,
+    text:" تحویل شده" ,
+    index:3
+
   },
 ];
 export default function OrderProgress() {
@@ -45,17 +58,30 @@ export default function OrderProgress() {
           </p>
         </div>
       </div>
-      <div className="row d-flex gx-lg-0">
-        <div className="col-12 col-md-12 col-lg-12 d-flex flex-column">
-          <div className="circle-box d-flex flex-row-reverse justify-content-center">
-            <div className="circle"></div>
-            <div className="line"></div>
+
+
+      <div class="row d-flex gx-lg-0 mb-5">
+          <div class="circle-box d-flex flex-row-reverse justify-content-center">
+          {stateInfo.map((state)=>{
+            return <span className=" d-flex flex-row-reverse">
+              
+              <div className={state.index <= productState ? "circle green ":"circle"}>
+                  <p>{state.text} </p>
+              </div>
+              {renderLine()}
+            </span>
+
+            function renderLine() {
+              if (state.index == 3) {
+                return <div className={state.index <= productState ? "line short green " : "line short"}></div>;
+              } else {
+                return <div className={state.index <= productState ? "line green " : "line"}></div>;
+              }
+            }
+          })}
           </div>
-          <div className="state-box d-flex justify-content-center">
-            <p>تائید شده</p>
-          </div>
-        </div>
       </div>
+
       <hr />
 
       <div className="row mt-lg-2">

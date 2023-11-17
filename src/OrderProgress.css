@@ -20,18 +20,36 @@
 .OrderProgress .circle {
   width: 2rem;
   height: 2rem;
-  background-color: #0dfca0;
+  background-color:transparent;
+  border: 1px solid gray;
   border-radius: 50%;
+  position: relative;
+}
+.green{
+  background-color: #0dfca0 !important;
+  color: #0dfca0;
+  border: 1px solid  #0dfca0 !important ;
 }
 .line {
   height: 0.01rem;
   width: 7em;
-  background-color: #0dfca0;
+  background-color: gray;
   margin-top: 1em;
 }
+.short{
+  width: 3em;
+
+}
+.circle p{
+    position: absolute;
+    top:120%;
+    text-align: left;
+    left: -50%;
+    width: 5rem;
+}
 .state-box {
-  margin-left: 4em;
-  margin-top: 0.7em;
+  /* margin-left: 4em;
+  margin-top: 0.7em; */
 }
 .state-box p {
   font-size: 0.9rem;
